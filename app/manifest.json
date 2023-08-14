@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Ressources Saver",
+  "version": "1.0",
+  "description": "Little Firefox extension to save web pages via an API for later reading.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "3PSY0N@ressources-saver-ext"
+    }
+  },
+  "permissions": [
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "/views/popup.html",
+    "default_icon": {
+      "128": "/img/icon.svg"
+    }
+  },
+  "icons": {
+    "128": "/img/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
