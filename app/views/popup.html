@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ressources Saver - Popup</title>
+    <link href="/css/app.css" rel="stylesheet"/>
+    <script src="/js/theme-switch.js"></script>
+</head>
+<body class="font-roboto">
+<main class="bg-slate-200 dark:bg-slate-600 border border-slate-400 p-4 text-center">
+    <div id="open-settings" class="flex justify-end">
+        <svg class="w-6 h-6 fill-slate-400 hover:fill-slate-500 dark:fill-slate-100 dark:hover:fill-slate-300 cursor-pointer transition" viewBox="0 0 24 24"><path d="m18 8-1-1-1-1a1 1 0 0 1 0-1l1-1 1-1a1 1 0 0 1 1 0l1 1 1 1a1 1 0 0 1 0 1l-1 1-1 1h-1zm3 5v-1a1 1 0 0 0-1 0v1h-1a1 1 0 0 0 0 1h1v1a1 1 0 0 0 1 0v-1h1a1 1 0 0 0 0-1h-1zm-5 1 1 1 1 2-2 2-1 1-2-1v2l-1 1H8l-1-1v-2l-2 1-1-1-2-2 1-2 1-1-1-1-1-2 2-2 1-1 2 1V7l1-1h4l1 1v2l2-1 1 1 2 2-1 2-1 1zm-3 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0z"/></svg>
+    </div>
+    <h1 class="text-xl font-medium text-slate-900 dark:text-slate-100">
+        Save this page
+    </h1>
+    <input id="tagInput" type="text" class="mt-4 w-full text-sm rounded-md border px-2 py-1 dark:bg-slate-300 dark:text-slate-900" placeholder="Tag separated by comma ,"/>
+    <button id="saveBtn" class="mt-4 rounded-md border dark:border-slate-600 px-4 py-2 bg-blue-300 hover:bg-green-300 transition text-sm">
+        Save
+    </button>
+    <p id="status" class="text-sm"></p>
+</main>
+<script src="/js/popup.js"></script>
+</body>
+</html>
