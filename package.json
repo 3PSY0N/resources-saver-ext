@@ -1,0 +1,11 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "npx tailwindcss -i ./style/input.css -o ./app/css/app.css",
+    "dev": "npx tailwindcss -i ./style/input.css -o ./app/css/app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
